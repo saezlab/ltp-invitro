@@ -14,3 +14,41 @@ new or custom modifications on the analysis method can be
 done by modifying the code in the `ltp.featureproc.Screen`
 class. This class is not well documented but very clearly
 structured code.
+
+To run the analysis on your own follow the steps below:
+
+```
+# Clone this repo:
+git clone git@git.embl.de:grp-gavin/ltp_invitro.git
+
+# Enter the directory:
+cd ltp_invitro
+
+# Clone the repo of the `lipyd` module:
+git clone --single-branch --branch dev4 git@git.embl.de:grp-gavin/lipyd.git
+
+# Link the directory of the `lipyd` module to your working directory:
+ln -s lipyd/src/lipyd ./
+
+# Clone the repo of the `ltp` module:
+git clone --single-branch --branch ltp git@git.embl.de:grp-gavin/ltp_ms.git
+
+# Link the directory of the `ltp` module to your working directory:
+ln -s ltp_ms/src/ltp ./
+
+# Link your directory with all MGF files below the `data` directory:
+ln -s /where/you/store/mgf/files ./data/mgf
+
+# Modify the paths near the top of `ltp/featureproc.py` to point to the
+# instances of SwissLipids and LipidMaps databases you desire to use.
+# If you want to use the most recent versions comment out those lines.
+
+# Open a python shell and run the analysis
+# as you see in `workflow_features.py`:
+
+>>> from ltp import featureproc
+>>> s = featureproc.Screen(screen = 'invitro')
+>>> s.main()
+```
+
+That's all.
