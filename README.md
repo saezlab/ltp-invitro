@@ -1,4 +1,4 @@
-# Data and workflow for feature filtering and identification in the `in vitro` lipid transfer protein ligand screen
+# Data and workflow for feature filtering and identification in the *in vitro* lipid transfer protein ligand screen
 
 We have 3 layers of code here:
 
