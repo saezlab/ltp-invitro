@@ -51,4 +51,4 @@ ln -s /where/you/store/mgf/files ./data/mgf
 >>> s.main()
 ```
 
-That's all.
+It's that easy! :)
