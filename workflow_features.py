@@ -37,11 +37,11 @@ s.main()
 s0 = featureproc.Screen('invitro')
 s0.set_results_dir()
 s0.read_covariates()
-s0.experiment = ('GLTPD1', '')
-s0.protein = 'GLTPD1'
+s0.experiment = ('STARD10', '')
+s0.protein = 'STARD10'
 s0.ionmode = 'pos'
 s0.peak_version = ''
-s0.exp_str = 'GLTPD1'
+s0.exp_str = 'STARD10'
 s0.collect_peaks_files()
 s0.set_sample_id_proc()
 s0.set_ms2_param()
@@ -54,3 +54,18 @@ s0.setup_data()
 s0.basic_filters()
 s0.peak_size_filter(remove = False)
 s0.samples.sort_all('mzs')
+
+
+s0 = featureproc.Screen('invitro')
+s0.set_results_dir()
+s0.read_covariates()
+s0.experiment = ('TTPAL', '')
+s0.protein = 'TTPAL'
+s0.ionmode = 'pos'
+s0.peak_version = ''
+s0.exp_str = 'TTPAL'
+s0.collect_peaks_files()
+s0.set_sample_id_proc()
+s0.set_ms2_param()
+s0.setup_data()
+
