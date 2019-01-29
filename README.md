@@ -43,7 +43,7 @@ ln -s /where/you/store/mgf/files ./data/mgf
 # instances of SwissLipids and LipidMaps databases you desire to use.
 # If you want to use the most recent versions comment out those lines.
 
-# Open a python shell and run the analysis
+# Open a Python3 shell and run the analysis
 # as you see in `workflow_features.py`:
 
 >>> from ltp import featureproc
