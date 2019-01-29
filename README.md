@@ -15,7 +15,7 @@ done by modifying the code in the `ltp.featureproc.Screen`
 class. This class is not well documented but very clearly
 structured code.
 
-To run the analysis on your own follow the steps below:
+To run the analysi follow the steps below:
 
 ```
 # Clone this repo:
