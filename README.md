@@ -43,6 +43,10 @@ ln -s /where/you/store/mgf/files ./data/mgf
 # instances of SwissLipids and LipidMaps databases you desire to use.
 # If you want to use the most recent versions comment out those lines.
 
+# Make sure all dependencies of these modules are installed
+# (If I forgot something and you get import error just install those as well)
+pip3 install -r lipyd/requirements.txt
+
 # Open a Python3 shell and run the analysis
 # as you see in `workflow_features.py`:
 
