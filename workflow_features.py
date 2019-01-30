@@ -69,3 +69,25 @@ s0.set_sample_id_proc()
 s0.set_ms2_param()
 s0.setup_data()
 
+
+# for testing on one protein:
+s0 = featureproc.Screen('invitro')
+s0.set_results_dir()
+s0.read_covariates()
+s0.experiment = ('GLTP', '')
+s0.protein = 'GLTP'
+s0.ionmode = 'pos'
+s0.peak_version = ''
+s0.exp_str = 'GLTP'
+s0.collect_peaks_files()
+s0.set_sample_id_proc()
+s0.set_ms2_param()
+
+
+s0.one_experiment()
+
+# or step by step:
+s0.setup_data()
+s0.basic_filters()
+s0.peak_size_filter(remove = False)
+s0.samples.sort_all('mzs')
