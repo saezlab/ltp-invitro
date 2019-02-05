@@ -20,6 +20,13 @@ from ltp import featureproc
 s = featureproc.Screen('invitro')
 s.main()
 
+# to use different peak ratio threshold:
+s = featureproc.Screen(
+    'invitro',
+    profile_filter_args = {'tolerance': 1.5}
+)
+s.main()
+
 
 
 # generate profile plots with multiple thresholds
@@ -56,18 +63,21 @@ s0.peak_size_filter(remove = False)
 s0.samples.sort_all('mzs')
 
 
-s0 = featureproc.Screen('invitro')
+s0 = featureproc.Screen('invitro', )
 s0.set_results_dir()
 s0.read_covariates()
-s0.experiment = ('TTPAL', '')
-s0.protein = 'TTPAL'
-s0.ionmode = 'pos'
+s0.experiment = ('FABP1', '')
+s0.protein = 'FABP1'
+s0.ionmode = 'neg'
 s0.peak_version = ''
-s0.exp_str = 'TTPAL'
+s0.exp_str = 'FABP1'
 s0.collect_peaks_files()
 s0.set_sample_id_proc()
 s0.set_ms2_param()
 s0.setup_data()
+s0.basic_filters()
+s0.peak_size_filter()
+s0.samples.sort_all('mzs')
 
 
 # for testing on one protein:
@@ -82,6 +92,10 @@ s0.exp_str = 'GLTP'
 s0.collect_peaks_files()
 s0.set_sample_id_proc()
 s0.set_ms2_param()
+s0.setup_data()
+s0.basic_filters()
+s0.peak_size_filter(remove = False)
+s0.samples.sort_all('mzs')
 
 
 s0.one_experiment()
