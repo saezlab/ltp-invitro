@@ -68,7 +68,7 @@ def print_total_intensities(protein, ionmode, peak_version = ''):
     ))
 
 
-s0 = print_total_intensities('CLVS1', 'pos')
+print_total_intensities('CLVS1', 'pos')
 
 #A0:	3023426942	1289
 #A4:	3054683294	1531
@@ -81,7 +81,7 @@ s0 = print_total_intensities('CLVS1', 'pos')
 #A11:	2752685115	1174
 
 
-s0 = print_total_intensities('FABP4', 'neg')
+print_total_intensities('FABP4', 'neg')
 
 #G0:	170748269	269
 #G5:	181966312	279
@@ -94,20 +94,21 @@ s0 = print_total_intensities('FABP4', 'neg')
 #G12:	170967837	282
 #H1:	234082553	267
 
-s0 = print_total_intensities('FABP6', 'neg')
+
+print_total_intensities('FABP6', 'neg')
 
 #A0:	216668941	352
 #A5:	177691815	333
 #A6:	207614130	351
 #A7:	188022515	366
-#A8:	85431669	239 *
+#A8:	 85431669	239 *
 #A9:	218841108	363
 #A10:	229390343	364
 #A11:	219519318	356
 #A12:	210669742	349
 
 
-s0 = print_total_intensities('GLTPD1', 'neg')
+print_total_intensities('GLTPD1', 'neg')
 
 #E0:	113212995	189
 #E3:	290905277	356
@@ -116,13 +117,13 @@ s0 = print_total_intensities('GLTPD1', 'neg')
 #E6:	266616941	357
 #E7:	275999216	359
 #E8:	330343476	367
-#E9:	94488895	191 *
+#E9:	 94488895	191 *
 #E10:	283605323	349
 #E11:	280651063	345
 #E12:	108341384	189
 
 
-s0 = print_total_intensities('GM2A', 'neg')
+print_total_intensities('GM2A', 'neg')
 
 #G0:	298482538	301
 #G7:	142223583	218
@@ -134,7 +135,7 @@ s0 = print_total_intensities('GM2A', 'neg')
 #H1:	182906735	217
 
 
-s0 = print_total_intensities('GM2A', 'pos')
+print_total_intensities('GM2A', 'pos')
 
 #G0:	3417498363	1876
 #G7:	3316086481	2008
@@ -146,7 +147,7 @@ s0 = print_total_intensities('GM2A', 'pos')
 #H1:	3117979075	1919
 
 
-s0 = print_total_intensities('HSDL2', 'neg', 'a')
+print_total_intensities('HSDL2', 'neg', 'a')
 
 #A0:	130180994	172
 #A4:	286183401	285
@@ -158,7 +159,7 @@ s0 = print_total_intensities('HSDL2', 'neg', 'a')
 #A10:	268231041	271
 
 
-s0 = print_total_intensities('RBP7', 'neg')
+print_total_intensities('RBP7', 'neg')
 
 #C0:	254041147	336
 #C5:	111555133	254
@@ -171,7 +172,7 @@ s0 = print_total_intensities('RBP7', 'neg')
 #C12:	244552629	358
 
 
-s0 = print_total_intensities('SEC14L2', 'neg')
+print_total_intensities('SEC14L2', 'neg')
 
 #C0:	265581257	269
 #C5:	169493710	214
@@ -184,7 +185,7 @@ s0 = print_total_intensities('SEC14L2', 'neg')
 #C12:	173552702	220
 
 
-s0 = print_total_intensities('SEC14L2', 'pos')
+print_total_intensities('SEC14L2', 'pos')
 
 #C0:	3214025950	1741
 #C5:	3267696769	1277
@@ -197,7 +198,7 @@ s0 = print_total_intensities('SEC14L2', 'pos')
 #C12:	3354516096	1297
 
 
-s0 = print_total_intensities('SEC14L5', 'pos')
+print_total_intensities('SEC14L5', 'pos')
 
 #A0:	2430378757	1126
 #A4:	2531794512	 624 *
