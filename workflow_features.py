@@ -179,3 +179,25 @@ _ = shutil.move(
     os.path.join(s0.results_dir, 'RLBP1.xlsx'),
     os.path.join(s0.results_dir, 'RLBP1_E5-E6-E7.xlsx'),
 )
+
+
+
+# with E4:E5 and E5:E6 ratios
+s0.protein_fractions[('RLBP1', '')]['protein_frac0'] = ('E5', 'E6',)
+s0.protein_fractions[('RLBP1', '')]['protein_frac1'] = ('E4',)
+s0.setup_data()
+s0.one_experiment()
+
+_ = shutil.move(
+    os.path.join('plots', 'RLBP1_pos_2.00_profiles.png'),
+    os.path.join('plots', 'RLBP1_pos_2.00_E4-E5-E6_profiles.png'),
+)
+
+_ = shutil.move(
+    os.path.join('plots', 'RLBP1_neg_2.00_profiles.png'),
+    os.path.join('plots', 'RLBP1_neg_2.00_E4-E5-E6_profiles.png'),
+)
+_ = shutil.move(
+    os.path.join(s0.results_dir, 'RLBP1.xlsx'),
+    os.path.join(s0.results_dir, 'RLBP1_E4-E5-E6.xlsx'),
+)
