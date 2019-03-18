@@ -20,18 +20,26 @@ from lipyd import settings
 from lipyd import lipproc
 from lipyd import name
 from lipyd import moldb
+from lipyd import mz
+from lipyd import mass
+from lipyd import formula
 from ltp import results
 from ltp import ltproteins
 
 
 def reload():
     
+    imp.reload(settings)
+    imp.reload(mz)
+    imp.reload(mass)
+    imp.reload(formula)
     imp.reload(lipproc)
     imp.reload(name)
     imp.reload(moldb)
     moldb.db.reload()
     imp.reload(ltproteins)
     imp.reload(results)
+
 
 
 rr = results.ResultsReader(screen = 'invitro')
