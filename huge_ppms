@@ -1,9 +1,13 @@
- 8 STARD2  neg   A      I     PC(34:1)         790.597016993  804.576008451 -1.73743578124e4 [M+HCOO]-    This is ether PC
- 2 STARD10 neg   A      I     PE(40:8)         772.529019598  786.507921533 -1.77733771680e4 [M-H]-       This is ether PE
- 1 STARD10 neg   A      I     PE(38:6)         748.528254330  762.507921533 -1.83337993067e4 [M-H]-       This is ether PE
-51 TTPAL   pos   E      I     PE(32:1)         735.564198     707.533398553  3.96176343109e4 [M+NH4]+     This is PE(34:1)
+ 8 STARD2  neg   A      I     PC(34:1)         790.597016993  804.576008451 -1.73743578124e4 [M+HCOO]-    This is ether PC, but we don't know which chain is ether, I corrected in the excel sheet
+ 2 STARD10 neg   A      I     PE(40:8)         772.529019598  786.507921533 -1.77733771680e4 [M-H]-       This is ether PE, but we don't know which chain is ether, I corrected in the excel sheet
+ 1 STARD10 neg   A      I     PE(38:6)         748.528254330  762.507921533 -1.83337993067e4 [M-H]-       This is ether PE, but we don't know which chain is ether, I corrected in the excel sheet
+51 TTPAL   pos   E      I     PE(32:1)         735.564198     707.533398553  3.96176343109e4 [M+NH4]+     This is PE(34:1), I corrected in the excel sheet
+60 TTPAL   pos   E      I     CL(69:3)        1435.036161     1434.02952775  7.01961310969e2 [M+NH4]+     [CL(70:1)+H]+ (-10ppm) or [Lyso-CL(71:5)+Na]+ (7ppm)
+52 RLBP1   pos   E      I     CL(66:3)        1392.99172100   1391.98257756  7.24968442205e2 [M+NH4]+     [CL(67:1)+H]+ (-8ppm) or [Lyso-CL(68:5)+Na]+ (9ppm)
+51 RLBP1   neg   E      I     CL(66:3)        1373.947224     1372.94147554  7.32550133308e2 [M-H]-       [CL(65:5)+H]+ (9ppm)
+55 RLBP1   pos   E      I     CL(64:2)        1366.97779800   1365.96692749  7.40040249146e2 [M+NH4]+     [CL(65:0)+H]+ (-6ppm) or [Lyso-CL(68:7)+H]+ (8ppm)
 34 STARD10 neg   E      I     PG(34:2)         813.488165     745.502512533  9.11943975021e4 [M-H]-       This might be [PG(36:5)+HCOO]-, [PG(34:2)-H]- should be 745.5025091422299
-71 TTPAL   pos   E      I     CL(34:1)        1409.02183600   948.520900656  4.85493714504e5 [M+NH4]+     This fits only [CL(68:0)+H]+ at -9ppm (otherwise [TAG(94:30)+NH4]+ at 0.9ppm, haven't checked the MS2)
+71 TTPAL   pos   E      I     CL(34:1)        1409.02183600   948.520900656  4.85493714504e5 [M+NH4]+     This fits only [CL(68:0)+H]+ at -9ppm (otherwise [TAG(94:30)+NH4]+ at 0.9ppm, haven't checked the MS2), or [Lyso-CL(71:7)+H]+ with 6ppm error or [Lyso-CL(69:4)+Na]+ with 8ppm error
 58 RLBP1   pos   E      I     CL(33:1)        1409.022535     934.505250591  5.07773802350e5 [M+NH4]+     Same as above
-57 RLBP1   pos   E      I     CL(32:1)        1407.007533     920.489600527  5.28542562778e5 [M+NH4]+     If Cardiolipin, this could be only [LysoCL(36:6)+H]+ with 9ppm error
-54 RLBP1   pos   E      I     CL(33:1)        1435.038658     934.505250591  5.35613263908e5 [M+NH4]+     If Cardiolipin, this could be only [CL(70:1)+H]+ or [LysoCL(71:5)+Na]+
+57 RLBP1   pos   E      I     CL(32:1)        1407.007533     920.489600527  5.28542562778e5 [M+NH4]+     If Cardiolipin, this could be [CL(68:1)+H]+ with -8ppm error or [Lyso-CL(71:8)+H]+ with 8ppm error or [Lyso-CL(69:5)+Na]+ with 9ppm error
+54 RLBP1   pos   E      I     CL(33:1)        1435.038658     934.505250591  5.35613263908e5 [M+NH4]+     If Cardiolipin, this could be [CL(70:1)+H]+ with -8ppm error or [LysoCL(71:5)+Na]+
