@@ -34,6 +34,6 @@ def reload():
     imp.reload(results)
 
 
-rr = results.ResultsReader(screen = 'invivo')
+rr = results.ResultsReader(screen = 'invitro')
 rr.main()
 rr.export()
