@@ -25,11 +25,13 @@ from lipyd import mass
 from lipyd import formula
 from ltp import results
 from ltp import ltproteins
+from ltp import settings as ltpsettings
 
 
 def reload():
     
     imp.reload(settings)
+    imp.reload(ltpsettings)
     imp.reload(mz)
     imp.reload(mass)
     imp.reload(formula)
@@ -41,7 +43,7 @@ def reload():
     imp.reload(results)
 
 
-
+reload()
 rr = results.ResultsReader(screen = 'invitro')
 rr.main()
 rr.export()

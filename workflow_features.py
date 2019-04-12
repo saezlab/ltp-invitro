@@ -201,3 +201,41 @@ _ = shutil.move(
     os.path.join(s0.results_dir, 'RLBP1.xlsx'),
     os.path.join(s0.results_dir, 'RLBP1_E4-E5-E6.xlsx'),
 )
+
+
+# TTPAL positive mode, loading MS2 features:
+s1 = featureproc.Screen(
+    'invitro',
+    profile_filter_args = {'min_ratio': .3},
+)
+s1.set_results_dir()
+s1.read_covariates()
+s1.experiment = ('TTPAL', '')
+s1.protein = 'TTPAL'
+s1.ionmode = 'pos'
+s1.peak_version = ''
+s1.exp_str = 'TTPAL'
+s1.collect_peaks_files()
+s1.set_sample_id_proc()
+s1.set_ms2_param()
+s1.setup_data()
+s1.filtering()
+s1.identification()
+
+s1 = featureproc.Screen(
+    'invitro',
+    profile_filter_args = {'min_ratio': .3},
+)
+s1.set_results_dir()
+s1.read_covariates()
+s1.experiment = ('RLBP1', '')
+s1.protein = 'RLBP1'
+s1.ionmode = 'pos'
+s1.peak_version = ''
+s1.exp_str = 'RLBP1'
+s1.collect_peaks_files()
+s1.set_sample_id_proc()
+s1.set_ms2_param()
+s1.setup_data()
+s1.filtering()
+s1.identification()
